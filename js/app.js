@@ -16,7 +16,12 @@ function eventListener() {
 
 function getSubscription(e) {
     e.preventDefault();
+    
 
+      if(this.type === 'email') {
+        emailValidation(this);
+   }
+   if(input.value !== '' ) {
     Swal.fire({
         position: 'center',
         icon: 'success',
@@ -27,12 +32,25 @@ function getSubscription(e) {
 
       input.classList.remove('footer__form__input-correct');
       form.reset();
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            showConfirmButton: false,
+            text: 'Something went wrong!',
+            timer: 1800
+           
+          })
+   
+ }
     
 }
 
 function emailValidation(e) {
     
 const  mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
 
 if(e.target.value.match(mailformat)) {
     formField.removeChild(formField.lastChild);
