@@ -1,0 +1,128 @@
+@use 'general/variables' as v;
+@use 'general/mixins' as m;
+
+
+.footer {
+
+   color: v.$Very-Pale-Blue;
+   
+  &__bg{
+    background-color: #00252e;
+    padding: 3rem 0;
+   
+  }
+
+  &__grid {
+    display: grid;
+    gap: 4rem;
+    padding: 0 2rem;
+    @include m.tablet { 
+      grid-template-columns: repeat(2,1fr);
+      gap: 30rem;
+      
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+  &__section {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  &__section-one {
+    @include m.tablet { 
+      grid-column: 2/3;
+    }
+  }
+  &__section-two {
+    @include m.tablet { 
+      grid-row: 1/2;
+    }
+  }
+
+  &__form {
+    @include m.desktop { 
+      display: flex;
+      align-items: baseline;
+      gap: 2rem;
+      
+
+    }
+  }
+  &__form__input {
+    width: 100%;
+    padding: .6rem 0;
+    border-radius: .5rem;
+    @include m.tablet { 
+      padding: .6rem 3rem;
+      margin-right: 2rem;
+    }
+  }
+  &__field {
+    text-align: end;
+    margin-top: 2rem;
+    @include m.tablet { 
+      max-width: 3rem;
+    }
+   
+  }
+
+  &__submit {
+    background-color: #ff52bf;
+    border-radius: 0.5rem;
+    color: #f5faff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.3rem 4rem;
+    position: relative;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: v.$Light-Pink;
+    }
+}
+
+
+  
+&__item {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+
+  &__social {
+    display: flex;
+    gap: 2rem;
+  }
+  &__icon {
+    color: v.$Very-Pale-Blue;
+    font-size: 2rem;
+
+    &:hover {
+      color: #1ca7f1;
+    }
+  }
+
+  &__form__input-error {
+    border: 2px solid red;
+  }
+  &__form__input-correct {
+    border: 2px solid  green;
+  }
+
+  &__error {
+    color: red;
+    margin: 1rem 0;
+  }
+
+}

@@ -1,0 +1,27 @@
+
+@use 'general/variables' as v;
+@use 'general/mixins' as m;
+
+
+
+.header {
+    padding: 3rem 0;
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 12rem;
+    }
+    &__btn {
+        @include m.btnHeader(v.$Pink, v.$Pink);
+    }
+
+    &__link {
+        color: v.$Pink;
+        font-size: 1.3rem;
+    }
+
+}

@@ -1,0 +1,20 @@
+@use 'general/variables' as v;
+@use 'general/mixins' as m;
+
+
+.build {
+    text-align: center;
+  margin: 20rem 0;
+
+  &__title {
+    margin-bottom: 6rem;
+
+    @include m.tablet { 
+      font-size: 4rem;
+    }
+  }
+  &__btn {
+    
+    @include m.btn(v.$Pink, v.$Very-Pale-Blue);
+}
+}

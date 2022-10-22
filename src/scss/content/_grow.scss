@@ -1,0 +1,76 @@
+@use 'general/variables' as v;
+@use 'general/mixins' as m;
+
+
+.grow {
+    margin: 6rem 0;
+    &__grid {
+        display: grid;
+        gap: 7rem;
+    }
+    &__space {
+        padding: 2rem 3rem;
+    }
+    &__bg{
+        background-color: v.$Very-Pale-Blue;
+        @include m.tablet { 
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            gap: 10rem;
+            padding: 4rem 5rem;
+        }
+    
+    }
+
+    &__card-img {
+        @include m.tablet { 
+            grid-column: 2/3;
+            padding: 0 2rem;
+        }
+    }
+
+    &__card-text {
+        @include m.tablet { 
+            grid-row: 1/2;
+           
+        }
+        @include m.desktop { 
+            padding: 10rem;
+        }
+    }
+
+    &__title {
+       text-align: center;
+       padding: 3rem 0 2rem 0;
+       margin: 0;
+
+       @include m.tablet { 
+        font-size: 3rem;
+        text-align: left;
+       }
+
+    }
+
+    &__paragraph {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1.3rem;
+
+        @include m.tablet { 
+            text-align: left;
+        }
+    }
+
+    &__bg-two {
+        padding: 4rem 2.5rem;
+        @include m.tablet { 
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            gap: 10rem;
+            padding: 4rem 5rem;
+        }
+    }
+
+}

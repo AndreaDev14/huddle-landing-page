@@ -1,0 +1,23 @@
+@use 'general/variables' as v;
+
+
+h1 {
+    font-size: 2rem;
+    font-family: v.$fontOne;
+    line-height: 1.5;
+}
+h2 {
+    font-size: 3rem;
+    font-family: v.$fontTwo;
+
+}
+h3 {
+    font-size: 1.8rem;
+}
+a {
+    text-decoration: none;
+}
+
+[class$="__heading"] {
+    margin: 2rem 0;
+}
