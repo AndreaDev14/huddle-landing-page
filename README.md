@@ -21,6 +21,8 @@
 - Sass/Scss - gulp
 - JavaScript
 - [SweetAlert](https://sweetalert2.github.io/) 
+-  AOS - Animate On Scroll Library
+
 
 
 
