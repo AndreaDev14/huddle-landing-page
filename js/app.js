@@ -1,4 +1,8 @@
 
+  AOS.init();
+
+
+
 const form = document.querySelector('#form');
 const input = document.querySelector('#input');
 const formField = document.querySelector('.form__field')
