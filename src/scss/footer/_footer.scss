@@ -5,6 +5,7 @@
 .footer {
 
    color: v.$Very-Pale-Blue;
+
    
   &__bg{
     background-color: #00252e;
@@ -32,10 +33,7 @@
     font-size: 1.2rem;
     line-height: 1.7;
   }
-  &__section {
-    display: grid;
-    gap: 1.5rem;
-  }
+ 
 
   &__section-one {
     @include m.tablet { 

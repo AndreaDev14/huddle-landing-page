@@ -7,11 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
     rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
   <link rel="stylesheet" href="build/css/app.css">
@@ -20,7 +17,7 @@
 
 <body>
   <header class="header container">
-    <div class="header__grid">
+    <div class="header__grid" data-aos="fade-down">
       <div class="header__logo">
         <img src="images/logo.svg" alt="logo">
       </div>
@@ -32,23 +29,26 @@
 
   <main>
     <section class="community container">
-      <h1 class="community__title" data-aos="zoom-in" data-aos-duration="2000">Build The Community Your Fans Will Love</h1>
-      <p class="community__paragraph" data-aos="zoom-in" data-aos-duration="2000"> Huddle re-imagines the way we build communities. You have a voice, but so does
+      <h1 class="community__title" data-aos="fade-up" data-aos-duration="2000">Build The Community Your Fans Will Love
+      </h1>
+      <p class="community__paragraph" data-aos="fade-up" data-aos-duration="2000"> Huddle re-imagines the way we build
+        communities. You have a voice, but so does
         your audience. Create connections with your users as you engage in genuine discussion. </p>
-      <a href="" class="community__btn" data-aos="zoom-in" data-aos-duration="2000">
+      <a href="" class="community__btn" data-aos="fade-up" data-aos-duration="2000">
         Get Started For Free</a>
-      <img src="images/screen-mockups.svg" alt="screen-mockups" class="community__img-screen" data-aos="zoom-in-up" data-aos-duration="2000">
+      <img src="images/screen-mockups.svg" alt="screen-mockups" class="community__img-screen" data-aos="fade-up"
+        data-aos-duration="2000">
 
       <div class="community__grid">
         <div class="community__num--item" data-aos="zoom-in">
           <img src="images/icon-communities.svg" alt="communities" class="community__img">
-          <h2 class="community__num data-aos=zoom-in">1.4k+</h2>
+          <h2 class="community__num ">1.4k+</h2>
           <p class="community__num-paragraph">Communities Formed</p>
 
         </div>
         <div class="community__num--item" data-aos="zoom-in">
           <img src="images/icon-messages.svg" alt="email" class="community__img">
-          <h2 class="community__num" > 2.7m+</h2>
+          <h2 class="community__num"> 2.7m+</h2>
           <p class="community__num-paragraph">
             Messages Sent</p>
 
@@ -62,12 +62,13 @@
           <img src="images/bg-section-top-desktop-1.svg" alt="wave">
           <div class=" grow__bg grow__space ">
             <div class="grow__card-img">
-              <img src="images/illustration-grow-together.svg" alt="illustration-grow-together" data-aos="fade-left" class="grow__img">
+              <img src="images/illustration-grow-together.svg" alt="illustration-grow-together" data-aos="fade-left"
+                class="grow__img">
 
             </div>
-            <div class="grow__card-text" data-aos="zoom-in-right" >
-              <h3 class="grow__title"  >Grow Together</h3>
-              <p class="grow__paragrap ">Generate meaningful discussions with your audience and build a strong, loyal
+            <div class="grow__card-text" data-aos="zoom-in-right">
+              <h3 class="grow__title">Grow Together</h3>
+              <p class="grow__paragraph ">Generate meaningful discussions with your audience and build a strong, loyal
                 community.
                 Think of the insightful conversations you miss out on with a feedback form.
               </p>
@@ -80,12 +81,12 @@
         <div class="grow__item">
 
           <div class=" grow__bg-two grow__space ">
-            <div class="grow__card-img">
+            <div class="grow__card-img grow__card-img-two">
               <img src="images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation"
-                class="grow__img" data-aos="fade-left">
+                class="grow__img" data-aos="zoom-in-right">
             </div>
 
-            <div class="grow__card-text" data-aos="zoom-in-right">
+            <div class="grow__card-text grow__card-tex-two " data-aos="zoom-in-left">
               <h3 class="grow__title"> Flowing Conversations</h3>
               <p class="grow__paragraph">
                 You wouldn't paginate a conversation in real life, so why do it online? Our threads have
@@ -100,7 +101,8 @@
           <img src="images/bg-section-top-desktop-1.svg" alt="wave">
           <div class=" grow__bg grow__space ">
             <div class="grow__card-img">
-              <img src="images/illustration-your-users.svg" alt="illustration-your-users" class="grow__img" data-aos="fade-left">
+              <img src="images/illustration-your-users.svg" alt="illustration-your-users" class="grow__img"
+                data-aos="fade-left">
 
             </div>
             <div class="grow__card-text" data-aos="zoom-in-right">
@@ -126,9 +128,7 @@
 
   </main>
   <footer class="footer">
-
-
-    <img src="images/bg-footer-top-desktop.svg" alt="wave">
+    <img src="images/bg-footer-top-desktop.svg " alt="wave" class="footer__bottom">
 
     <div class="footer__bg">
 

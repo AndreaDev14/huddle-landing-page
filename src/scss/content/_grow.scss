@@ -71,6 +71,21 @@
             gap: 10rem;
             padding: 4rem 5rem;
         }
+
+
     }
 
+    &__card-img-two {
+        @include m.tablet { 
+            grid-column: 1/2;
+    }
+        }
+        
+    &__card-tex-two {
+        @include m.tablet { 
+            grid-column: 2/3;
+           
+        }
+
+    }
 }
